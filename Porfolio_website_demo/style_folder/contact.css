@@ -1,0 +1,165 @@
+/*Introduction part css code*/
+
+.intro-part {
+    position: relative;
+    top: 70px;
+    overflow:auto;
+    min-height: 28rem;
+    width: 100%;
+    text-align: center;
+    background-image: url(../images_folder/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 19rem;
+}
+
+
+.title {
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.title h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 13rem;
+    margin-bottom: 2rem;
+}
+
+.title a, h2 {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+
+
+
+/*form css code*/
+
+.form-contact {
+    position: relative;
+    z-index: 0;
+
+}
+.form-block {
+    float: left;
+    position: relative;
+    width: 60%;
+
+}
+
+textarea,  input[name="subject"]{
+    z-index: 0;
+    color: rgb(12, 12, 105);
+    padding: 1.3rem;
+    border: 2px solid rgb(1, 1, 55);
+    border-radius: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1.3rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background: transparent;
+    width: 100%;
+}
+
+input[name="fname"], input[name="email"] {
+    z-index: 0;
+    color: rgb(12, 12, 105);
+    padding: 1.3rem;
+    border: 2px solid rgb(1, 1, 55);
+    border-radius: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1.3rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background: transparent;
+    width: 48%;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.half-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.button {
+    margin-top: 2rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #1345e6 0%, #23baed 51%, #1345e6 100%);
+    padding: 1.3rem 2.7rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-size: 200% auto;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-position: right center;
+}
+
+
+.address-contact {
+    position: relative;
+    padding-left: 3.2rem;
+    top : 0;
+    right: 0;
+    display: inline-block;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+
+.address-contact__item {
+    position: relative;
+    padding-top: 0.7rem;
+    padding-bottom: 2rem;
+    display: block;
+}
+
+.address-contact__item p {
+    position:absolute;
+    top: 0px;
+    left: 70px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #797979;
+    display: inline-block;
+}
+
+.address-contact__item i {
+    font-size: 3rem;
+    color: rgb(4, 4, 81);
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+    textarea, input[name="fname"], input[name="subject"], input[name="email"] {
+        width: 100%;
+    } 
+
+    .half-flex {
+        flex-direction: column;
+    } 
+    .form-block {
+        width: 100%;
+    }
+
+    .address-contact {
+        display: none;
+    }
+}
