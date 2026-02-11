@@ -1,2 +1,4 @@
 # portfolio-website-demo
-I have built this website to practice my knowledge of HTML5 and CSS3.
+HTML5/CSS3
+
+The real example of portfolio website.
